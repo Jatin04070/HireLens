@@ -1,30 +1,35 @@
 # HireLens
 
-HireLens is a portfolio-ready data analytics project that analyzes analyst and BI hiring demand, compares it with a candidate profile, and turns the gap into a focused upskilling roadmap.
-
-## Overview
-
-The goal of this project is to answer a practical career question:
+HireLens is a job market skill gap analyzer built to answer a practical question:
 
 Which analyst roles best match the current profile, and which skills should be learned next to become more competitive in the market?
 
-To answer that, HireLens combines:
+It combines a structured local job-market dataset, a Python analysis pipeline, SQLite-based querying, and a static dashboard to turn raw role-demand signals into recruiter-friendly insight.
 
-- a structured local job-market dataset
-- a Python pipeline for analysis and transformation
-- SQLite for queryable role and skill analysis
-- a polished frontend dashboard for storytelling
+> Note: this version uses a synthetic but realistic local dataset so the full workflow can be demonstrated end to end without external API dependencies.
 
-## What This Project Does
+## Demo Preview
 
-- models analyst and BI job postings across major Indian cities
-- stores raw and normalized data in CSV and SQLite formats
-- analyzes role demand, city clusters, work mode, salary patterns, and top skills
-- compares current skills against market demand for target roles
-- identifies strongest-fit roles and highest-priority skill gaps
-- generates a three-month upskilling roadmap
+### Dashboard Overview
 
-## Current Output Highlights
+![HireLens dashboard overview](./docs/hirelens-overview.png)
+
+### Analytics Detail View
+
+![HireLens dashboard detail view](./docs/hirelens-details.png)
+
+## Why This Project Matters
+
+Most student analytics projects stop at dashboards or model accuracy. HireLens goes one step further by connecting analytics to a real decision:
+
+- which roles are most aligned with the current profile
+- which skills appear most often across target jobs
+- which gaps are worth prioritizing next
+- how to turn those gaps into a focused learning roadmap
+
+That makes the project useful not only as an analytics case study, but also as a strong portfolio story for internships and entry-level analyst roles.
+
+## Current Output Snapshot
 
 From the current generated analysis:
 
@@ -32,6 +37,17 @@ From the current generated analysis:
 - `16` companies are represented in the sample
 - `BI Analyst` appears as the strongest-fit target role
 - `Power BI` is the highest-value skill gap to close next
+- `SQL` appears as the strongest baseline skill across the market sample
+
+## Core Features
+
+- models analyst and BI job postings across major Indian cities
+- stores data in both CSV and SQLite formats
+- analyzes top skills, city clusters, work modes, salary patterns, and role demand
+- compares current profile skills against market demand for target roles
+- calculates role-fit scores and identifies missing high-value skills
+- generates a three-month upskilling roadmap
+- presents the final story in a polished static dashboard
 
 ## Tech Stack
 
@@ -41,6 +57,28 @@ From the current generated analysis:
 - `HTML`
 - `CSS`
 - `JavaScript`
+
+## How It Works
+
+```mermaid
+flowchart LR
+    A[config/profile.json] --> B[Python pipeline]
+    B --> C[data/raw/job_postings.csv]
+    B --> D[data/processed/job_market.db]
+    D --> E[SQL skill and role analysis]
+    B --> F[data/processed/analysis.json]
+    F --> G[dashboard/analysis-data.js]
+    G --> H[Static dashboard]
+```
+
+### Pipeline Flow
+
+1. A synthetic dataset of analyst and BI roles is generated with title, city, company, salary, experience level, and required skills.
+2. The dataset is loaded into SQLite and normalized into job and skill tables.
+3. The current profile from `config/profile.json` is compared against market demand.
+4. Role-fit scores, skill-gap priorities, and market insights are calculated.
+5. The outputs are exported into JSON and dashboard-ready JavaScript.
+6. A static frontend presents the analysis through cards, charts, highlights, and a learning roadmap.
 
 ## Project Structure
 
@@ -62,23 +100,18 @@ From the current generated analysis:
   Rendering logic for cards, charts, tables, and roadmap
 - `sql/market_queries.sql`
   Reusable SQL analysis queries
+- `docs/`
+  README screenshots for GitHub preview
 
-## How It Works
+## Run Locally
 
-1. A synthetic dataset of analyst and BI roles is generated with fields such as title, city, company, salary, experience band, and required skills.
-2. The dataset is loaded into SQLite and normalized into job and skill tables.
-3. The current profile from `config/profile.json` is compared against market demand.
-4. Role-fit scores, skill-gap priorities, and market insights are calculated.
-5. The outputs are exported into JSON and dashboard-ready JavaScript.
-6. A static frontend presents the final story in a recruiter-friendly way.
-
-## Run The Pipeline
+### 1. Generate the data and analysis outputs
 
 ```powershell
 python scripts/build_pipeline.py
 ```
 
-## Open The Dashboard
+### 2. Open the dashboard
 
 Open `dashboard/index.html` directly in a browser, or serve the folder locally:
 
@@ -86,7 +119,11 @@ Open `dashboard/index.html` directly in a browser, or serve the folder locally:
 python -m http.server 8000 -d dashboard
 ```
 
-Then visit `http://localhost:8000`.
+Then visit:
+
+```text
+http://localhost:8000
+```
 
 ## Customization
 
@@ -102,10 +139,18 @@ You can change:
 
 Then rerun the pipeline to regenerate the outputs.
 
-## Suggested Next Upgrades
+## Why It Works Well In A Portfolio
+
+- it combines `Python + SQL + dashboarding` in one project
+- it has a clear business-style problem statement
+- it produces measurable outputs instead of only code
+- it shows both analysis and storytelling
+- it creates a natural interview conversation around skills, hiring trends, and decision-making
+
+## Next Improvements
 
 - replace the synthetic dataset with scraped or manually collected job-board data
 - add filters by city, role, and experience level
 - extend the pipeline with resume parsing and keyword matching
 - convert the dashboard into a deployable React or Next.js app
-- publish the project with screenshots and a hosted live demo
+- publish a live hosted version with interactive filters
