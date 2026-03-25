@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HireLens | Job Market Skill Gap Analyzer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio Analytics Project</p>
+          <h1>HireLens</h1>
+          <p class="subtitle">Job Market Skill Gap Analyzer</p>
+          <p class="hero-text" id="hero-text"></p>
+        </div>
+        <div class="hero-panel">
+          <p class="panel-label">Current Focus</p>
+          <div id="summary-cards" class="summary-grid"></div>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="card spotlight">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Market Readout</p>
+              <h2>What the hiring market is asking for</h2>
+            </div>
+          </div>
+          <div id="insight-list" class="insight-list"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Demand Heat</p>
+              <h2>Top skills across job postings</h2>
+            </div>
+          </div>
+          <div id="skill-bars" class="bar-list"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Role Fit</p>
+              <h2>Where the current profile already fits</h2>
+            </div>
+          </div>
+          <div id="role-fit-list" class="fit-list"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Gap Priorities</p>
+              <h2>Highest-value skills to add next</h2>
+            </div>
+          </div>
+          <div id="gap-list" class="chip-grid"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Geography</p>
+              <h2>Where the strongest opportunity clusters sit</h2>
+            </div>
+          </div>
+          <div id="city-cards" class="mini-card-grid"></div>
+        </section>
+
+        <section class="card">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Roadmap</p>
+              <h2>Three-month upskilling path</h2>
+            </div>
+          </div>
+          <div id="roadmap" class="roadmap-grid"></div>
+        </section>
+
+        <section class="card table-card">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Dataset Snapshot</p>
+              <h2>Sample postings in the pipeline</h2>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Role</th>
+                  <th>Company</th>
+                  <th>City</th>
+                  <th>Level</th>
+                  <th>Salary</th>
+                  <th>Core Skills</th>
+                </tr>
+              </thead>
+              <tbody id="job-table"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./analysis-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

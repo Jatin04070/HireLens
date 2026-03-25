@@ -1,0 +1,469 @@
+window.ANALYSIS_DATA = {
+  "meta": {
+    "project_name": "HireLens",
+    "subtitle": "Job Market Skill Gap Analyzer",
+    "generated_on": "2026-03-24",
+    "candidate_name": "Jatin Gupta"
+  },
+  "summary": {
+    "total_jobs": 180,
+    "total_companies": 16,
+    "average_salary_lpa": 6.4,
+    "best_fit_role": "BI Analyst",
+    "market_coverage": 33
+  },
+  "profile": {
+    "target_roles": [
+      "Data Analyst",
+      "BI Analyst",
+      "Power BI Analyst"
+    ],
+    "current_skills": [
+      "Agile Methodology",
+      "Documentation",
+      "EDA",
+      "Git",
+      "Jupyter Notebook",
+      "KPI Reporting",
+      "Python",
+      "SQL",
+      "Stakeholder Management",
+      "VS Code"
+    ],
+    "learning_goal": "Build a portfolio-ready project that maps current skills against current market demand for analyst and BI roles."
+  },
+  "charts": {
+    "role_distribution": [
+      {
+        "label": "Data Analyst",
+        "value": 59
+      },
+      {
+        "label": "BI Analyst",
+        "value": 44
+      },
+      {
+        "label": "Reporting Analyst",
+        "value": 27
+      },
+      {
+        "label": "Business Analyst",
+        "value": 26
+      },
+      {
+        "label": "Power BI Analyst",
+        "value": 24
+      }
+    ],
+    "city_distribution": [
+      {
+        "label": "Noida",
+        "value": 37
+      },
+      {
+        "label": "New Delhi",
+        "value": 30
+      },
+      {
+        "label": "Bengaluru",
+        "value": 29
+      },
+      {
+        "label": "Gurugram",
+        "value": 28
+      },
+      {
+        "label": "Hyderabad",
+        "value": 20
+      },
+      {
+        "label": "Mumbai",
+        "value": 19
+      },
+      {
+        "label": "Pune",
+        "value": 17
+      }
+    ],
+    "work_mode_distribution": [
+      {
+        "label": "Hybrid",
+        "value": 72
+      },
+      {
+        "label": "On-site",
+        "value": 70
+      },
+      {
+        "label": "Remote",
+        "value": 38
+      }
+    ],
+    "top_skills": [
+      {
+        "label": "SQL",
+        "value": 175
+      },
+      {
+        "label": "Power BI",
+        "value": 152
+      },
+      {
+        "label": "Excel",
+        "value": 151
+      },
+      {
+        "label": "Dashboarding",
+        "value": 131
+      },
+      {
+        "label": "Communication",
+        "value": 94
+      },
+      {
+        "label": "Python",
+        "value": 88
+      },
+      {
+        "label": "Stakeholder Management",
+        "value": 69
+      },
+      {
+        "label": "Data Cleaning",
+        "value": 63
+      },
+      {
+        "label": "ETL",
+        "value": 43
+      },
+      {
+        "label": "DAX",
+        "value": 41
+      },
+      {
+        "label": "Power Query",
+        "value": 41
+      },
+      {
+        "label": "Data Modeling",
+        "value": 33
+      }
+    ]
+  },
+  "role_fit": [
+    {
+      "role": "BI Analyst",
+      "score": 35,
+      "matched_skills": [
+        "SQL",
+        "Stakeholder Management",
+        "Python"
+      ],
+      "missing_skills": [
+        "Power BI",
+        "Dashboarding",
+        "Excel",
+        "Power Query"
+      ]
+    },
+    {
+      "role": "Data Analyst",
+      "score": 30,
+      "matched_skills": [
+        "SQL",
+        "Python"
+      ],
+      "missing_skills": [
+        "Excel",
+        "Power BI",
+        "Dashboarding",
+        "Data Cleaning"
+      ]
+    },
+    {
+      "role": "Power BI Analyst",
+      "score": 23,
+      "matched_skills": [
+        "SQL",
+        "Stakeholder Management"
+      ],
+      "missing_skills": [
+        "Power BI",
+        "Dashboarding",
+        "DAX",
+        "Excel"
+      ]
+    }
+  ],
+  "skill_gap": {
+    "market_coverage": 33,
+    "priority_gaps": [
+      {
+        "skill": "Power BI",
+        "openings": 113,
+        "demand_pct": 89.0
+      },
+      {
+        "skill": "Dashboarding",
+        "openings": 101,
+        "demand_pct": 79.5
+      },
+      {
+        "skill": "Excel",
+        "openings": 99,
+        "demand_pct": 78.0
+      },
+      {
+        "skill": "Communication",
+        "openings": 56,
+        "demand_pct": 44.1
+      },
+      {
+        "skill": "ETL",
+        "openings": 43,
+        "demand_pct": 33.9
+      },
+      {
+        "skill": "DAX",
+        "openings": 41,
+        "demand_pct": 32.3
+      }
+    ],
+    "existing_strengths": [
+      {
+        "skill": "SQL",
+        "openings": 125,
+        "demand_pct": 98.4
+      },
+      {
+        "skill": "Python",
+        "openings": 66,
+        "demand_pct": 52.0
+      },
+      {
+        "skill": "Stakeholder Management",
+        "openings": 41,
+        "demand_pct": 32.3
+      },
+      {
+        "skill": "Documentation",
+        "openings": 8,
+        "demand_pct": 6.3
+      }
+    ]
+  },
+  "city_role_highlights": [
+    {
+      "role": "Data Analyst",
+      "city": "Gurugram",
+      "top_skill": "SQL",
+      "top_skill_demand": 13
+    },
+    {
+      "role": "Data Analyst",
+      "city": "Bengaluru",
+      "top_skill": "SQL",
+      "top_skill_demand": 10
+    },
+    {
+      "role": "Data Analyst",
+      "city": "New Delhi",
+      "top_skill": "Excel",
+      "top_skill_demand": 10
+    },
+    {
+      "role": "BI Analyst",
+      "city": "New Delhi",
+      "top_skill": "Power BI",
+      "top_skill_demand": 9
+    },
+    {
+      "role": "Data Analyst",
+      "city": "Noida",
+      "top_skill": "SQL",
+      "top_skill_demand": 9
+    },
+    {
+      "role": "BI Analyst",
+      "city": "Gurugram",
+      "top_skill": "Dashboarding",
+      "top_skill_demand": 8
+    },
+    {
+      "role": "Business Analyst",
+      "city": "Noida",
+      "top_skill": "Excel",
+      "top_skill_demand": 8
+    },
+    {
+      "role": "Data Analyst",
+      "city": "Pune",
+      "top_skill": "Communication",
+      "top_skill_demand": 7
+    }
+  ],
+  "roadmap": [
+    {
+      "phase": "Month 1",
+      "focus": "Power BI, Dashboarding",
+      "outcome": "Build two recruiter-friendly mini dashboards and explain the KPI logic behind every chart."
+    },
+    {
+      "phase": "Month 2",
+      "focus": "Excel, Communication",
+      "outcome": "Turn the strongest-fit path into a complete BI Analyst case study with measurable recommendations."
+    },
+    {
+      "phase": "Month 3",
+      "focus": "ETL, DAX",
+      "outcome": "Add SQL snippets, assumptions, and stakeholder-facing insight summaries for interview storytelling."
+    }
+  ],
+  "insights": [
+    "SQL appears in 97% of openings, making it the clearest baseline skill in the market sample.",
+    "Delhi NCR accounts for 53% of openings in this dataset, making it the strongest early-career region to target first.",
+    "Your strongest fit today is BI Analyst at 35% alignment, while Power BI is the highest-value gap to close next."
+  ],
+  "sample_jobs": [
+    {
+      "job_id": "JG-001",
+      "title": "Power BI Analyst",
+      "company": "BlueOrbit Analytics",
+      "city": "New Delhi",
+      "experience_level": "Entry",
+      "salary_lpa": 7.2,
+      "skills": [
+        "SQL",
+        "ETL",
+        "Power BI",
+        "Excel"
+      ]
+    },
+    {
+      "job_id": "JG-002",
+      "title": "Business Intelligence Analyst",
+      "company": "NexaPulse",
+      "city": "New Delhi",
+      "experience_level": "Entry",
+      "salary_lpa": 5.9,
+      "skills": [
+        "Stakeholder Management",
+        "Dashboarding",
+        "Python",
+        "Power BI"
+      ]
+    },
+    {
+      "job_id": "JG-003",
+      "title": "Operations Reporting Analyst",
+      "company": "BlueOrbit Analytics",
+      "city": "New Delhi",
+      "experience_level": "Entry",
+      "salary_lpa": 4.4,
+      "skills": [
+        "Power Query",
+        "Tableau",
+        "SQL",
+        "Dashboarding"
+      ]
+    },
+    {
+      "job_id": "JG-004",
+      "title": "Insights Analyst",
+      "company": "InsightForge",
+      "city": "Mumbai",
+      "experience_level": "Entry",
+      "salary_lpa": 5.1,
+      "skills": [
+        "A/B Testing",
+        "SQL",
+        "Communication",
+        "Stakeholder Management"
+      ]
+    },
+    {
+      "job_id": "JG-005",
+      "title": "Power BI Analyst",
+      "company": "MetricHive",
+      "city": "Noida",
+      "experience_level": "Senior",
+      "salary_lpa": 12.1,
+      "skills": [
+        "Excel",
+        "Power Query",
+        "Dashboarding",
+        "SQL"
+      ]
+    },
+    {
+      "job_id": "JG-006",
+      "title": "BI Analyst",
+      "company": "DataNook Consulting",
+      "city": "Mumbai",
+      "experience_level": "Entry",
+      "salary_lpa": 5.8,
+      "skills": [
+        "Power BI",
+        "Excel",
+        "SQL",
+        "Dashboarding"
+      ]
+    },
+    {
+      "job_id": "JG-007",
+      "title": "BI Analyst",
+      "company": "SignalCraft",
+      "city": "Pune",
+      "experience_level": "Entry",
+      "salary_lpa": 6.0,
+      "skills": [
+        "Excel",
+        "Data Modeling",
+        "SQL",
+        "Stakeholder Management"
+      ]
+    },
+    {
+      "job_id": "JG-008",
+      "title": "Data Analyst - Reporting",
+      "company": "NexaPulse",
+      "city": "New Delhi",
+      "experience_level": "Entry",
+      "salary_lpa": 4.6,
+      "skills": [
+        "A/B Testing",
+        "Python",
+        "Data Cleaning",
+        "Communication"
+      ]
+    },
+    {
+      "job_id": "JG-009",
+      "title": "BI Analyst",
+      "company": "HelioMetrics",
+      "city": "Gurugram",
+      "experience_level": "Entry",
+      "salary_lpa": 5.3,
+      "skills": [
+        "Excel",
+        "Stakeholder Management",
+        "SQL",
+        "Communication"
+      ]
+    },
+    {
+      "job_id": "JG-010",
+      "title": "BI Analyst",
+      "company": "HelioMetrics",
+      "city": "Mumbai",
+      "experience_level": "Mid",
+      "salary_lpa": 6.7,
+      "skills": [
+        "Communication",
+        "Python",
+        "Excel",
+        "SQL"
+      ]
+    }
+  ]
+};

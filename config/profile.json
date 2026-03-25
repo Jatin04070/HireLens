@@ -1,0 +1,23 @@
+{
+  "candidate_name": "Jatin Gupta",
+  "target_roles": [
+    "Data Analyst",
+    "BI Analyst",
+    "Power BI Analyst"
+  ],
+  "current_skills": [
+    "Python",
+    "SQL",
+    "MySQL",
+    "SQLite",
+    "Exploratory Data Analysis",
+    "KPI Reporting",
+    "Documentation",
+    "Stakeholder Communication",
+    "Git",
+    "Jupyter Notebook",
+    "VS Code",
+    "Agile Methodology"
+  ],
+  "learning_goal": "Build a portfolio-ready project that maps current skills against current market demand for analyst and BI roles."
+}
